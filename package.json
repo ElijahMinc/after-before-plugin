@@ -1,0 +1,26 @@
+{
+  "name": "before-after",
+  "version": "1.0.0",
+  "description": "before and after plugin",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "@parcel/transformer-css": {
+    "cssModules": {
+      "dashedIdents": true,
+      "pattern": "[local]-[hash]",
+      "cssModules": true
+    }
+  },
+  "scripts": {
+    "start": "parcel serve src/index.html -p 3000 --open",
+    "build": "parcel build src/index.ts --no-source-maps --no-cache --dist-dir=build"
+  },
+  "keywords": [
+    "before-after"
+  ],
+  "author": "Ilya Protsenko",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {}
+}
