@@ -1,0 +1,66 @@
+body, html{
+   margin: 0;
+   padding: 0;
+
+   height: 100%;
+}
+
+*,::after,::before{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.wrapper{
+   max-width: 1200px;
+   height: 100vh;
+   margin: 0 auto;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.after-before__wrapper{
+   width: 1024px;
+   height: 512px;
+   background-color: #ccc;
+
+   position: relative;
+}
+
+
+
+.after-before__left-slide{
+   position: absolute;
+   width: 50%;
+   height: 100%;
+
+
+   background: url('../static/before.png') no-repeat center center fixed;
+   background-size: cover;
+
+   z-index: 3;
+}
+
+
+.after-before__right-slide{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+
+   background: url('../static/after.png') no-repeat center center fixed;
+   
+   background-size: cover;
+   z-index: 2;
+}
+
+.after-before__resize{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 3px;
+   height: 100%;
+   background-color: white;
+   cursor: e-resize;
+}
